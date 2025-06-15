@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BrutalButton from "./brutalButton";
+import BrutalButton from "./button/brutalButton";
 
 export default function Hero() {
     return (

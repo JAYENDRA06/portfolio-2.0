@@ -1,6 +1,6 @@
-import { getProjects } from "@/lib/utils";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
-import BrutalButton from "./brutalButton";
+import { projects } from "@/lib/utils";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../ui/carousel";
+import BrutalButton from "../button/brutalButton";
 import BrutalCard from "./brutalCard";
 import Image from "next/image";
 
@@ -25,7 +25,7 @@ export function ProjectsCarousel() {
                         className="w-full max-w-md my-8"
                     >
                         <CarouselContent>
-                            {getProjects().map((data, index) => (
+                            {projects.map((data, index) => (
                                 <CarouselItem key={index}>
                                     <BrutalCard {...data} />
                                 </CarouselItem>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { HamburgerIcon } from "lucide-react";
-import { Drawer, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "../ui/drawer";
+import { Drawer, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "../../ui/drawer";
 import Link from "next/link";
 import { randomMovieRecommendation } from "@/lib/utils";
 

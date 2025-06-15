@@ -1,3 +1,4 @@
+import Link from "next/link";
 import DrawerMenu from "./drawerMenu";
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className="px-5 lg:px-10 py-5 sticky top-0 z-50 bg-inherit">
             <div className="flex items-center justify-between max-w-7xl mx-auto">
-                <div className="flex justify-center items-center gap-2"><h4 className="text-xl font-bold">Jayendra.</h4> <span className="text-sm bg-brutal-background rounded-full px-3 p-1 border-2 border-black font-semibold">dev</span></div>
+                <Link href="/" className="flex justify-center items-center gap-2"><h4 className="text-xl font-bold">Jayendra.</h4> <span className="text-sm bg-brutal-background rounded-full px-3 p-1 border-2 border-black font-semibold">dev</span></Link>
                 <ul className="space-x-4 gap-4 font-semibold  hidden lg:flex">
                     {links.map((link) => (
                         <li key={link.name}>

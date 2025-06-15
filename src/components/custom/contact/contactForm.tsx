@@ -1,7 +1,7 @@
 "use client";
 
 import { SendIcon } from "lucide-react";
-import BrutalCircleButton from "./brutalCircleButton";
+import BrutalCircleButton from "../button/brutalCircleButton";
 
 export default function ContactForm() {
     const inputClassName = "px-4 py-2 border-2 bg-white border-black rounded-lg";

@@ -1,9 +1,9 @@
 import About from "@/components/custom/about";
-import Contact from "@/components/custom/contact";
+import Contact from "@/components/custom/contact/contact";
 import Experience from "@/components/custom/experience";
 import Hero from "@/components/custom/hero";
 import MarqueeText from "@/components/custom/marquee";
-import { ProjectsCarousel } from "@/components/custom/projectsCarousel";
+import { ProjectsCarousel } from "@/components/custom/projects/projectsCarousel";
 
 export default async function Home() {
   return (

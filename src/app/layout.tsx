@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes'
-import Navbar from "@/components/custom/navbar";
+import Navbar from "@/components/custom/navbar/navbar";
 import Footer from "@/components/custom/footer";
 
 const syne = Syne({

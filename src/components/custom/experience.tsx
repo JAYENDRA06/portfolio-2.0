@@ -1,5 +1,5 @@
 import { Badge } from "../ui/badge";
-import ArrowBrutalButton from "./arrowBrutalButton";
+import ArrowBrutalButton from "./button/arrowBrutalButton";
 
 export default function Experience() {
     const skils = [

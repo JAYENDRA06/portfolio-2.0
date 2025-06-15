@@ -1,22 +1,22 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { Project } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export function getProjects() {
-  return [
-    {
-      title: "StrangerHub",
-      description: "A social media platform for connecting with strangers.",
-      link: "https://strgr-hub.vercel.app/",
-      imgSrc: "/strgrhub.png",
-      tags: ["Next.js", "UI Components", "Brutalist Design"],
-      github: "https://github.com/orgs/stranger-hub/repositories",
-    }
-  ]
-}
+export const projects: Project[] = [
+  {
+    title: "StrangerHub",
+    description: "A social media platform for connecting with strangers.",
+    content: "A social media platform that allows users to connect with strangers and friends and engage in real-time conversations. It features user profiles, chat functionality, and friend requests. The platform is built with Next.js, Socket.io for managing rooms in real-time and Prisma for database management. It also integrates AgoraRTM RTC for video calls and chatting and uses Auth.js for authentication.",
+    link: "https://strgr-hub.vercel.app/",
+    imgSrc: "/strgrhub.png",
+    tags: ["Next.js", "Socket.io", "Prisma", "Tailwind CSS", "TypeScript", "Express.js", "MongoDB", "AgoraRTM RTC", "Auth.js"],
+    github: "https://github.com/orgs/stranger-hub/repositories",
+  }
+]
 
 export const randomMovieRecommendation = [
   "The Dark Knight Rises",

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import ArrowBrutalButton from "./arrowBrutalButton";
-import BrutalCircleButton from "./brutalCircleButton";
+import ArrowBrutalButton from "../button/arrowBrutalButton";
+import BrutalCircleButton from "../button/brutalCircleButton";
 import { GithubIcon } from "lucide-react";
 
 export default function BrutalCard({
@@ -31,9 +31,11 @@ export default function BrutalCard({
             <h2 className="text-2xl font-bold mb-2">{title}</h2>
             <p className="text-gray-700 mb-4">{description}</p>
             <div className="flex justify-between items-center">
-                <Link href={link}>Learn more</Link>
+                <Link href="/projects">Learn more</Link>
                 <div className="flex items-center gap-5">
-                    <ArrowBrutalButton />
+                    <Link href={link}>
+                        <ArrowBrutalButton />
+                    </Link>
                     <BrutalCircleButton className="bg-white"><GithubIcon /></BrutalCircleButton>
                 </div>
             </div>
