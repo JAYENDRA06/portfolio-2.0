@@ -3,6 +3,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import BrutalButton from "../button/brutalButton";
 import BrutalCard from "./brutalCard";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ProjectsCarousel() {
     return (
@@ -22,7 +23,7 @@ export function ProjectsCarousel() {
                         opts={{
                             loop: true
                         }}
-                        className="w-full max-w-md my-8"
+                        className="w-full max-w-[350px] md:max-w-sm lg:max-w-md my-8"
                     >
                         <CarouselContent>
                             {projects.map((data, index) => (
@@ -34,7 +35,9 @@ export function ProjectsCarousel() {
                         <CarouselPrevious className="hidden lg:flex" />
                         <CarouselNext className="hidden lg:flex" />
                     </Carousel>
-                    <BrutalButton className="bg-white">Project details</BrutalButton>
+                    <Link href="/projects">
+                        <BrutalButton className="bg-white">Project details</BrutalButton>
+                    </Link>
                 </div>
                 <Image
                     src="/gear.svg"

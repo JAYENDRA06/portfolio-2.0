@@ -1,5 +1,8 @@
 import Image from "next/image";
 import BrutalButton from "./button/brutalButton";
+import Socials from "./socials";
+import Link from "next/link";
+import { resumeLink } from "@/lib/utils";
 
 export default function Hero() {
     return (
@@ -19,8 +22,12 @@ export default function Hero() {
                         {"Your friendly neighborhood software engineer, passionate about building innovative solutions and creating delightful user experiences."}
                     </p>
                     <div className="flex lg:justify-center gap-4 mt-6">
-                        <BrutalButton>View Resume</BrutalButton>
-                        <BrutalButton className="bg-white">Get In Touch</BrutalButton>
+                        <Link href={resumeLink} target="_blank">
+                            <BrutalButton>View Resume</BrutalButton>
+                        </Link>
+                        <Link href="#contact">
+                            <BrutalButton className="bg-white">Get In Touch</BrutalButton>
+                        </Link>
                     </div>
                 </main>
                 <Image
@@ -30,6 +37,9 @@ export default function Hero() {
                     height={200}
                     className="hidden lg:block w-[200px] h-[200px] animate-float2"
                 />
+            </div>
+            <div className="flex lg:justify-center mt-8 lg:mt-5">
+                <Socials />
             </div>
         </div>
     );

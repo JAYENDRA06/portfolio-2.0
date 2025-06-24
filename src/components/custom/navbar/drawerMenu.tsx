@@ -10,7 +10,7 @@ export default function DrawerMenu() {
     const links = [
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
-        { name: "Services", href: "/services" },
+        { name: "Projects", href: "/projects" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -39,7 +39,7 @@ export default function DrawerMenu() {
 
                 <div className="flex flex-col gap-6 p-5">
                     {links.map((link) => (
-                        <Link href={link.href} key={link.name} className="text-gray-600 hover:text-gray-900 hover:underline underline-offset-4">
+                        <Link onClick={() => setOpen(false)} href={link.href} key={link.name} className="text-gray-600 hover:text-gray-900 hover:underline underline-offset-4">
                             {link.name}
                         </Link>
                     ))}

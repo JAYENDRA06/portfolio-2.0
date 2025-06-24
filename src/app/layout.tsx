@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from 'next-themes'
 import Navbar from "@/components/custom/navbar/navbar";
 import Footer from "@/components/custom/footer";
+import { Toaster } from "sonner";
 
 const syne = Syne({
   subsets: ['latin'],
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${syne.className} antialiased`}
       >
         <Navbar />
+        <Toaster />
         <div className="flex flex-col items-center pb-10 mb-5 gap-15">
           <ThemeProvider
             attribute="class"
