@@ -15,7 +15,7 @@ export default function Navbar() {
                 <ul className="space-x-4 gap-4 font-semibold  hidden lg:flex">
                     {links.map((link) => (
                         <li key={link.name}>
-                            <a href={link.href} className="text-gray-600 hover:text-gray-900 hover:underline underline-offset-4">{link.name}</a>
+                            <Link href={link.href} className="text-gray-600 hover:text-gray-900 hover:underline underline-offset-4">{link.name}</Link>
                         </li>
                     ))}
                 </ul>
