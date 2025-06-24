@@ -44,8 +44,8 @@ export default function ContactForm() {
             } else {
                 setError("Failed to send your message. Please try again later.");
             }
-        } catch (err: any) {
-            setError(err.message || "Failed to send your message. Please try again later.");
+        } catch (err) {
+            setError("Failed to send your message. Please try again later.");
         } finally {
             setLoading(false);
         }
