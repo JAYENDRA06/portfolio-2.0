@@ -9,7 +9,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <MarqueeText text="SOFTWARE DEVELOPER, FRONTEND, BACKEND, NEXTJS, REACTJS, C++, ASP.NET, DESIGNER" />
+      <MarqueeText text="SOFTWARE DEVELOPER, FRONTEND, BACKEND, GO LANG, NEXTJS, REACTJS, C++, ASP.NET, DESIGNER" />
       <About />
       <Experience />
       <ProjectsCarousel />

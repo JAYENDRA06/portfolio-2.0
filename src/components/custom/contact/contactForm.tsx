@@ -99,7 +99,6 @@ export default function ContactForm() {
                     disabled={loading}
                 />
             </div>
-            <div className="text-yellow-600 font-semibold text-sm mb-2">{"I have noticed someone sending some weird messages lately. Whoever you are, firstly this contact works as a ME TO ME mailing system so I can't contact back on fake email IDs, and secondly who are you? 😭"}</div>
             {error && (
                 <div className="text-red-600 font-semibold text-sm mb-2">{error}</div>
             )}

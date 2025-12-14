@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
         position: "Software Developer",
         startDate: "July 2024",
         endDate: "Present",
-        description: "As part of the <u>landing pages and CMS</u> revamp initiative, I migrated the landing pages application <u>Next.js v15</u>, significantly improving performance and code maintainability. I <u>implemented multilingual support</u> with localized URLs and templates for Spanish and French, <u>enhancing the booking funnel</u> experience for international users. Additionally, I <u>developed CMS 2.0 React.js Admin UI and accompanying Express.js API</u> to streamline landing page management. While rewriting the Admin API, I introduced an <u>MVC</u> architecture and object-oriented structure, along with <u>dependency injection to eliminate memory leaks</u>. These improvements, combined with query and promise optimizations, <u>reduced API latency on critical endpoints by an average of two seconds</u>. I also applied modular design principles, <u>cutting down approximately 1,000 lines of code</u> across the UI and API, resulting in a cleaner and more maintainable codebase. I also worked on <u>Complatform .NET API</u> which consumes User Service to manage and organize users into audiences which can be used to schedule campaigns.",
+        description: "Migrated landing pages data preparation backend from <u>Next.js to Go</u> for ~10% of total traffic, <u>reducing average page rendering time</u> of those pages by <u>40%</u> and lowering server costs by <u>~20%</u>. Migrated landing pages frontend to <u>Next.js v15</u>. Designed and implemented multi-language URLs and templates for Spanish and French pages, increasing SEO traffic by <u>~5%</u>. Built <u>CMS 2.0 admin UI and API</u> to manage landing pages. Rewrote older Admin API using an <u>MVC architecture</u> and an object-oriented structure. Implemented dependency injection while rewriting the API, effectively eliminating memory leaks. Reduced API latency for critical endpoints by an average of <u>2 seconds</u> through optimized queries and promise handling. <u>Reduced approx. 1,000 lines of code</u> across the admin UI and API by applying modular design principles. Technologies used: Next.js, Express.js, ASP.NET, RabbitMQ, Redis, MongoDB, MSSQL.",
       },
       {
         position: "SDE Intern",
@@ -43,18 +43,19 @@ export const experiences: Experience[] = [
 ]
 
 export const skils = [
-  "Full Stack Development",
-  "UI/UX Design",
-  "Version Control (Git)",
-  "Problem Solving",
+  "Go lang",
   "Next.js",
   "React.js",
   "Node.js",
   "Express.js",
-  "MongoDB",
-  "SQL",
   "ASP.NET",
   "C++",
+  "MongoDB",
+  "SQL",
+  "Full Stack Development",
+  "UI/UX Design",
+  "Version Control (Git)",
+  "Problem Solving",
 ];
 
 export const resumeLink = "https://drive.google.com/file/d/1A7mFl4HZzNbXfBDyntVRwkSVLYO_eZCD/view?usp=drive_link";
