@@ -9,23 +9,17 @@ export function cn(...inputs: ClassValue[]) {
 
 export const experiences: Experience[] = [
   {
-    company: "Fareportal",
-    location: "Gurugram",
+    company: "Fareportal India Pvt. Ltd. (CheapOair)",
+    location: "Gurugram, Haryana",
     details: [
       {
-        position: "Software Developer",
-        startDate: "July 2024",
-        endDate: "Present",
-        description: "Migrated landing pages data preparation backend from <u>Next.js to Go</u> for ~10% of total traffic, <u>reducing average page rendering time</u> of those pages by <u>40%</u> and lowering server costs by <u>~20%</u>. Migrated landing pages frontend to <u>Next.js v15</u>. Designed and implemented multi-language URLs and templates for Spanish and French pages, increasing SEO traffic by <u>~5%</u>. Built <u>CMS 2.0 admin UI and API</u> to manage landing pages. Rewrote older Admin API using an <u>MVC architecture</u> and an object-oriented structure. Implemented dependency injection while rewriting the API, effectively eliminating memory leaks. Reduced API latency for critical endpoints by an average of <u>2 seconds</u> through optimized queries and promise handling. <u>Reduced approx. 1,000 lines of code</u> across the admin UI and API by applying modular design principles. Technologies used: Next.js, Express.js, ASP.NET, RabbitMQ, Redis, MongoDB, MSSQL.",
-      },
-      {
-        position: "SDE Intern",
+        position: "Software Engineer",
         startDate: "Jan 2024",
-        endDate: "July 2024",
-        description: "Initiated development of CMS 2.0 Admin UI and API focusing on automating the process of page creation and management. Delivered features like template and component creation while keeping track of history in git. Streamlined the process of adding components in templates with grapesjs. ",
+        endDate: "Present",
+        description: "Migrated CMS backend to <u>Go</u> for <u>50% of total traffic</u>, cutting page render time by <u>40%</u> and server costs by <u>20%</u>. Built a custom <u>micro-frontend system</u> to federate CSR React component bundles using CDN. Developed an in-house <u>A/B testing solution</u> for template experiments without third-party tooling. Automated bulk <u>Redis and CDN cache management</u>. Shipped multilingual (Spanish/French) template support, boosting SEO traffic by <u>2%</u>. Developed a price-hike feature for the price-alert <u>.NET microservice</u>, increasing email views and clicks. Rebuilt <u>CMS Admin (UI + API)</u> with modular architecture, cutting <u>1K+ LOC</u> and improving maintainability. Refactored legacy Express.js APIs with dependency injection and optimized queries, reducing latency by <u>~500ms</u> per critical endpoint.",
       },
     ],
-    techStack: ["Next.js", ".NET", "Express.js", "ASP.NET", "RabbitMQ", "Redis", "MongoDB", "MS SQL"]
+    techStack: ["Go", "Next.js", "React.js", "Express.js", "ASP.NET", ".NET", "Redis", "CDN", "RabbitMQ", "MongoDB", "MS SQL"]
   },
   {
     company: "SKILLSCAN Edtech India Pvt. Ltd. (Geeks Of Gurukul)",
@@ -35,7 +29,7 @@ export const experiences: Experience[] = [
         position: "Web Development Intern",
         startDate: "May 2023",
         endDate: "July 2023",
-        description: "I successfully designed and implemented a full-fledged <u>Learning Management System (LMS)</u> alongside the organization’s official website. As part of the initiative, I led the development of version 4 of the official website. I also redesigned the LMS platform, which resulted in an <u>average 3-second reduction in load time</u>, significantly enhancing performance and user satisfaction.",
+        description: "Designed and implemented the organization's <u>Learning Management System (LMS)</u> and official website. Redesigned the LMS, resulting in an <u>average 3-second reduction in load time</u>.",
       },
     ],
     techStack: ["React.js", "Express.js", "Tailwind CSS", "DaisyUI", "Firebase", "AWS"]
@@ -43,25 +37,32 @@ export const experiences: Experience[] = [
 ]
 
 export const skils = [
-  "Go lang",
+  "Go",
+  "TypeScript",
+  "C++",
+  "C#",
   "Next.js",
   "React.js",
+  "React Native",
   "Node.js",
   "Express.js",
   "ASP.NET",
-  "C++",
+  "PostgreSQL",
   "MongoDB",
-  "SQL",
-  "Full Stack Development",
-  "UI/UX Design",
-  "Version Control (Git)",
-  "Problem Solving",
+  "Redis",
+  "Kafka",
+  "AWS",
+  "Azure",
+  "Cloudflare",
+  "System Design",
+  "Performance Optimization",
+  "DSA",
 ];
 
-export const resumeLink = "https://drive.google.com/file/d/1A7mFl4HZzNbXfBDyntVRwkSVLYO_eZCD/view?usp=drive_link";
+export const resumeLink = "https://drive.google.com/file/d/1iEgzV32LGtYXwmBPjprnMl7E_qQvhMo6/view?usp=sharing";
 export const contactEmail = "jayendraawasthi0609@gmail.com";
 export const githubLink = "https://github.com/JAYENDRA06";
-export const linkedinLink = "https://www.linkedin.com/in/jayendra-awasthi-938152213/";
+export const linkedinLink = "https://www.linkedin.com/in/jayendra06/";
 export const figmaLink = "https://www.figma.com/@Jayendra";
 export const leetcodeLink = "https://leetcode.com/u/Jayendra06";
 
@@ -95,12 +96,31 @@ export const socialLinks = [
 
 export const projects: Project[] = [
   {
+    title: "INAZU",
+    description: "A GPS ride tracker and companion app for bike and car enthusiasts.",
+    content: "INAZU is a GPS ride-tracking app for bike and car enthusiasts, published on the App Store. I built the React Native/Expo client with Mapbox for live background location tracking, ride recaps, garage-linked stats, weekly and monthly progress, and ride memories with photo attachments. Social features include follow riders, user search, private profiles, and shareable profile and activity links. On the backend, I designed Go microservices for auth, activity, and email notifications with JWT auth, Redis sessions, PostgreSQL, Cloudflare R2 storage, and Kafka for email decoupling.",
+    link: "https://www.inazu.app/",
+    otherLinks: [
+      { type: "appstore", url: "https://apps.apple.com/us/app/inazu/id6775971770" },
+    ],
+    imgSrc: "/inazu.png",
+    tags: ["React Native", "Expo", "Mapbox", "Go", "PostgreSQL", "Redis", "Kafka", "Cloudflare R2"],
+  },
+  {
+    title: "Geeks of Gurukul",
+    description: "Official landing page and Learning Management System for an edtech platform.",
+    content: "During my internship at SKILLSCAN Edtech (Geeks of Gurukul), I designed and built the organization's official website and a full Learning Management System. I led development of version 4 of the landing page and redesigned the LMS, cutting average load time by about 3 seconds. The platform supports course delivery, student management, and the company's online and offline programs in AI, ML, Web3, and more.",
+    link: "https://geeksofgurukul.com/",
+    imgSrc: "/geeksofgurukul.png",
+    tags: ["React.js", "Express.js", "Tailwind CSS", "DaisyUI", "Firebase", "AWS"],
+  },
+  {
     title: "StrangerHub",
-    description: "A social media platform for connecting with strangers.",
-    content: "A social media platform that allows users to connect with strangers and friends and engage in real-time conversations. It features user profiles, chat functionality, and friend requests. The platform is built with Next.js, Socket.io for managing rooms in real-time and Prisma for database management. It also integrates AgoraRTM RTC for video calls and chatting and uses Auth.js for authentication.",
+    description: "A full-stack platform for random video and text chats between strangers.",
+    content: "Stranger Hub is a full-stack platform enabling random video and text chats between strangers using the Agora SDK. I implemented authentication and session management with NextAuth and Next.js middleware, and built a dedicated socket server to manage chat rooms in real time.",
     link: "https://strgr-hub.vercel.app/",
     imgSrc: "/strgrhub.png",
-    tags: ["Next.js", "Socket.io", "Prisma", "Tailwind CSS", "TypeScript", "Express.js", "MongoDB", "AgoraRTM RTC", "Auth.js"],
+    tags: ["Next.js", "Agora", "Socket.io", "NextAuth", "Prisma", "MongoDB", "AWS S3"],
     github: "https://github.com/orgs/stranger-hub/repositories",
   },
   {
@@ -116,9 +136,9 @@ export const projects: Project[] = [
   {
     title: "Doc-Udi",
     description: "A QR-based healthcare management system.",
-    content: "This was a hackathon team project involving development of a web and mobile app. I worked on the design and Next.js web app for this project. The mobile app was developed for patients and web app for doctors. Doc-Udi is a QR-based healthcare management system that allows patients to schedule and start appointments by scanning a unique QR code for each doctor. It enables doctors to access patients' previous medical records once the QR code is scanned, facilitating comprehensive and informed healthcare. The system is designed to store new prescriptions securely on the cloud for easy retrieval and management.",
+    content: "DOC-UDI applies UPI-style QR codes to healthcare, letting patients schedule and initiate appointments by scanning a doctor's unique code. Doctors can securely access patients' historical medical data upon scan for more informed diagnosis. I worked on the design and web app for this VinHack 2023 project, where our team won 2nd place and Best Design.",
     link: "https://www.figma.com/community/file/1517137813043787296",
-    disclaimer: "The project isn't deployed, figma and github links are provided for the application overview.",
+    disclaimer: " The project isn't deployed; Figma and GitHub links are provided for the application overview.",
     imgSrc: "/docudi1.png",
     tags: ["React.js", "Node.js", "MongoDB", "Express.js", "Tailwind CSS"],
     github: "https://github.com/orgs/DOC-UDI/repositories"
@@ -205,7 +225,7 @@ export const randomMovieRecommendation = [
 
 
 export function getYearsOfExperience() {
-  const startYear = 2023;
+  const startYear = 2024;
   const currentYear = new Date().getFullYear();
   return currentYear - startYear;
 }

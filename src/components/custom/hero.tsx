@@ -17,7 +17,7 @@ export default function Hero() {
                 />
                 <main className="flex flex-col gap-[35px] lg:text-center max-w-2xl mb-2 lg:mb-5 my-14">
                     <p className="text-lg lg:text-xl font-semibold">{"Hello, I'm Jayendra Awasthi 👋🏻"}</p>
-                    <h1 className="text-4xl lg:text-6xl font-bold">Software Developer and Designer</h1>
+                    <h1 className="text-4xl lg:text-6xl font-bold">Software Engineer</h1>
                     <p className="text-gray-700 lg:text-lg">
                         {"Your friendly neighborhood software engineer, passionate about building innovative solutions and creating delightful user experiences."}
                     </p>

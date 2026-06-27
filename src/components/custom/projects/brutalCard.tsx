@@ -1,8 +1,10 @@
+import { ProjectLink } from "@/lib/types";
 import Image from "next/image";
 import Link from "next/link";
 import ArrowBrutalButton from "../button/arrowBrutalButton";
 import BrutalCircleButton from "../button/brutalCircleButton";
 import { GithubIcon } from "lucide-react";
+import { ProjectLinkButtons } from "./projectLinkButtons";
 
 export default function BrutalCard({
     className = "",
@@ -10,12 +12,16 @@ export default function BrutalCard({
     title,
     description,
     link,
+    github,
+    otherLinks,
 }: {
     className?: string;
     imgSrc: string;
     title: string;
     description: string;
     link: string;
+    github?: string;
+    otherLinks?: ProjectLink[];
 }) {
     return (
         <div
@@ -33,10 +39,17 @@ export default function BrutalCard({
             <div className="flex justify-between items-center">
                 <Link href="/projects">Learn more</Link>
                 <div className="flex items-center gap-5">
-                    <Link href={link}>
+                    <Link href={link} target="_blank">
                         <ArrowBrutalButton />
                     </Link>
-                    <BrutalCircleButton className="bg-white"><GithubIcon /></BrutalCircleButton>
+                    <ProjectLinkButtons links={otherLinks} />
+                    {github && (
+                        <Link href={github} target="_blank">
+                            <BrutalCircleButton className="bg-white">
+                                <GithubIcon />
+                            </BrutalCircleButton>
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

@@ -19,9 +19,8 @@ export default async function About() {
                             </Link>
                         </div>
                         <p className="text-gray-700 text-lg lg:text-xl text-justify mt-10">
-                            {`Hello, I'm Jayendra Awasthi, a passionate software developer with a love for creating innovative solutions and delightful user experiences. 
-                            With a background in full-stack development, I enjoy building scalable applications that solve real-world problems. My expertise spans across various technologies, allowing me to adapt and learn quickly.
-                            When I'm not coding, you can find me exploring new design trends, solving DSA questions, or sharing knowledge with the community.`}
+                            {`Hello, I'm Jayendra Awasthi, a software engineer with experience across full-stack web development and mobile apps. I recently shipped INAZU, a GPS ride-tracking app on the App Store, and currently work at Fareportal building CMS platforms, micro-frontends, and backend services in Go and .NET.
+                            My background spans Next.js, React Native, Go, and cloud tooling across AWS, Azure, and Cloudflare. When I'm not coding, you can find me solving DSA problems or exploring system design.`}
                         </p>
                     </div>
                     <Image alt="about img" src="/heroImg.png" height={350} width={350} />

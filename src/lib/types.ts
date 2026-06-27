@@ -1,3 +1,10 @@
+export type ProjectLinkType = "appstore" | "playstore" | "figma" | "website";
+
+export interface ProjectLink {
+    type: ProjectLinkType;
+    url: string;
+}
+
 export interface Project {
     index?: number;
     title: string;
@@ -7,7 +14,8 @@ export interface Project {
     imgSrc: string;
     link: string;
     tags: string[];
-    github: string;
+    github?: string;
+    otherLinks?: ProjectLink[];
 }
 
 export interface Experience {

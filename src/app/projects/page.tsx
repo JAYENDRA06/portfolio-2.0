@@ -1,6 +1,6 @@
 import BrutalButton from "@/components/custom/button/brutalButton";
 import SingleProject from "@/components/custom/projects/singleProject";
-import { figmaLink, githubLink, projects } from "@/lib/utils";
+import { figmaLink, githubLink, projects, contactEmail } from "@/lib/utils";
 import { FigmaIcon, GithubIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default function Projects() {
         <div className="flex justify-between flex-wrap gap-10">
           <div>
             <h1 className="text-2xl lg:text-5xl font-bold mb-4">My Personal & Freelance <br />Development Projects</h1>
-            <p className="text-gray-600">Feel free to drop some scalable full stack project suggestions <Link className="hover:underline text-black" href="mailto:jayendraawasthi0609@gmail.com">here</Link></p>
+            <p className="text-gray-600">Feel free to drop some scalable full stack project suggestions <Link className="hover:underline text-black" href={`mailto:${contactEmail}`}>here</Link></p>
           </div>
           <div className="flex items-center gap-6">
             <Link href={githubLink} target="_blank">

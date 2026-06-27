@@ -5,6 +5,7 @@ import BrutalCircleButton from "../button/brutalCircleButton";
 import { GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { ProjectLinkButtons } from "./projectLinkButtons";
 
 export default function SingleProject({ project }: { project: Project }) {
     return (
@@ -37,11 +38,14 @@ export default function SingleProject({ project }: { project: Project }) {
                     <Link href={project.link} target="_blank">
                         <ArrowBrutalButton />
                     </Link>
-                    <Link href={project.github} target="_blank">
-                        <BrutalCircleButton className="bg-white">
-                            <GithubIcon />
-                        </BrutalCircleButton>
-                    </Link>
+                    <ProjectLinkButtons links={project.otherLinks} />
+                    {project.github && (
+                        <Link href={project.github} target="_blank">
+                            <BrutalCircleButton className="bg-white">
+                                <GithubIcon />
+                            </BrutalCircleButton>
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

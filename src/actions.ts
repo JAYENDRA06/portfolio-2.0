@@ -1,5 +1,6 @@
 "use server";
 import nodemailer from "nodemailer";
+import { contactEmail } from "@/lib/utils";
 
 export async function sendMail({ sender, subject, text }: { sender: string; subject: string; text?: string; }) {
     const transporter = nodemailer.createTransport({
@@ -12,7 +13,7 @@ export async function sendMail({ sender, subject, text }: { sender: string; subj
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: "jayendraawasthi0609@gmail.com",
+        to: contactEmail,
         subject: `Portfolio Contact by : ${sender}, Subject: ${subject}`,
         text,
     };
